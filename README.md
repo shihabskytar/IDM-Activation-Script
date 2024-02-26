@@ -38,7 +38,7 @@ Accepted values:
 
 ## Troubleshooting:
 - Properly uninstall any previous activator.
-- Uninstall IDM from control panel.
+- Uninstall IDM from the control panel.
 - Download and install the latest original IDM setup.
 - Temporarily disable Windows firewall using the script option.
 - Suspend Antivirus real-time protection temporarily.
@@ -52,14 +52,13 @@ Accepted values:
 - **WindowsAddict**: Ported Autoit tool to batch script.
 - **AveYo aka @BAU**: Snippet for setting registry ownership and permission.
 - **abbodi1406**: Provided batch script tricks and help.
-- **dbenham**: Set buffer height independently of window height.
+- **dbenham**: Set buffer height independently of the window height.
 
 ---
 
 ## IDM Activation Script
 
-### Website: [www.shihabskytar.com](https://www.shihabskytar.com) 🔗
-
+### Website: [www.shihabskytar.com](https://www.shihabskytar.com) 🔗  
 ---
 
 Update the README file for GitHub with a modern twist and captivating presentation!

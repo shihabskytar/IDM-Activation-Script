@@ -578,10 +578,14 @@ if %frz%==0 (
 call :_color %Green% "The IDM Activation process has been completed."
 echo:
 call :_color %Gray% "If the fake serial screen appears, use the Freeze Trial option instead."
+echo:
+call :_color %Blue% "www.shihabskytar.com"
 ) else (
 call :_color %Green% "The IDM 30 days trial period is successfully freezed for Lifetime."
 echo:
 call :_color %Gray% "If IDM is showing a popup to register, reinstall IDM."
+echo:
+call :_color %Blue% "www.shihabskytar.com"
 )
 
 ::========================================================================================================================================

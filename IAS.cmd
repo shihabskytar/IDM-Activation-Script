@@ -11,6 +11,7 @@
 ::   Homepages: https://github.com/shihabskytar/IDM-Activation-Script
 ::              https://t.me/ModBySKYTAR/5
 ::
+::       Telegram: @Stripe_op
 ::
 ::============================================================================
 
@@ -368,13 +369,11 @@ title  IDM Activation Script %iasver%
 if not defined terminal mode 75, 28
 
 echo:
-echo:          Website: www.shihabskytar.com
-echo:          Github: https://github.com/shihabskytar
 echo:
-call :_color2 %_White% "             " %_Green% "Created By SKYTAR"
+call :_color2 %_White% "             " %_Green% "IDM Activation X SKYTAR"
 echo:            ___________________________________________________ 
 echo:
-echo:               Telegram: @skytar_TG
+echo:               Website: www.shihabskytar.com
 echo:               Github: https://github.com/shihabskytar
 echo:            ___________________________________________________ 
 echo:                                                               

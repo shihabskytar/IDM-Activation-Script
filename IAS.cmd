@@ -1,4 +1,4 @@
-@set iasver=1.2
+@set iasver=2.4
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -9,9 +9,9 @@
 ::   IDM Activation Script (IAS)
 ::
 ::   Homepages: https://github.com/shihabskytar/IDM-Activation-Script
-::              https://t.me/ModBySKYTAR/5
+::              https://t.me/shihabskytar_TG/
 ::
-::       Telegram: @Stripe_op
+::       Website: www.shihabskytar.com
 ::
 ::============================================================================
 
@@ -506,10 +506,10 @@ echo %line%
 echo:
 echo      Activation is not working for some users and IDM may show fake serial nag screen.
 echo:
-call :_color2 %_White% "     " %_Green% "Its recommended to use Freeze Trial option instead."
+call :_color2 %_White% "     " %_Green% "Its recommended to use Freeze Trial option instead or press [9] to force Activation."
 echo %line%
 echo:
-choice /C:19 /N /M ">    [1] Go Back [9] Activate : "
+choice /C:19 /N /M "    >_<    [1] Go Back   [9] Activate "
 if !errorlevel!==1 goto :MainMenu
 cls
 )
@@ -578,8 +578,15 @@ if %frz%==0 (
 call :_color %Green% "The IDM Activation process has been completed."
 echo:
 call :_color %Gray% "If the fake serial screen appears, use the Freeze Trial option instead."
-echo:
-call :_color %Blue% "www.shihabskytar.com"
+@echo off
+echo.
+echo [1;34m*****************************[0m
+echo [1;34m*    www.shihabskytar.com   *[0m
+echo [1;34m*****************************[0m
+echo.
+pause
+start "" "http://www.shihabskytar.com"
+
 ) else (
 call :_color %Green% "The IDM 30 days trial period is successfully freezed for Lifetime."
 echo:
@@ -633,9 +640,10 @@ echo:
 echo Applying registration details...
 echo:
 
-set /a fname = %random% %% 9999 + 1000
-set /a lname = %random% %% 9999 + 1000
-set email=%fname%.%lname%@tonec.com
+set "fname=SKYTAR"
+set "lname=Labs"
+
+set email=%fname%_%lname%@tonec.com
 
 for /f "delims=" %%a in ('%psc% "$key = -join ((Get-Random -Count  20 -InputObject ([char[]]('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'))));$key = ($key.Substring(0,  5) + '-' + $key.Substring(5,  5) + '-' + $key.Substring(10,  5) + '-' + $key.Substring(15,  5) + $key.Substring(20));Write-Output $key" %nul6%') do (set key=%%a)
 
